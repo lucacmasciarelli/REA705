@@ -1,0 +1,314 @@
+\documentclass[conference,a4paper]{IEEEtran}
+
+
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+
+\usepackage[T1]{fontenc}%T1 fonts have Þ and ð
+\usepackage[utf8]{inputenc}% allows UTF encoding, needed for Icelandic characters
+
+
+\usepackage{cite}%reorganizing citation numbers
+\usepackage[cmex10]{amsmath}%American Math Society(AMS) math formatting
+\usepackage{amssymb,amsfonts}%AMS extra symbols and fonts
+\interdisplaylinepenalty=2500%allow line breaks in multi-line formulas
+\usepackage{array}%enhanced table tools
+\usepackage[caption=false,font=footnotesize]{subfig}%sub-figures under a main figure
+\usepackage{dblfloatfix}%fix double column figure ordering and placement
+
+\usepackage{algorithmic}%writing algorithms
+\usepackage{graphicx}%graphics inclusion
+% declare the path(s) where your graphic files are
+\graphicspath{{graphics/}{moregraphics/}}
+% and their extensions so you won't have to specify these with
+% every instance of \includegraphics
+\DeclareGraphicsExtensions{.pdf,.PDF,.jpeg,.JPEG,.jpg,.JPEG,.png,.PNG}
+
+\usepackage{booktabs}%pretty lines in tables: \toprule,\columnrule,\bottomrule
+
+\usepackage{siunitx}%SI unit formatting:  \SI{9.8}{\meter\per\second} and \si{\meter\per\second\square}
+
+\usepackage{textcomp}%special symbols not in all fonts
+\usepackage{xcolor}%color macros
+\usepackage[spaces,hyphens]{url}
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+    
+ %this is where the document starts. 
+
+\begin{document}
+
+%title of our research project 
+
+\title{A Suitable Authentication Method for People with and without Disabilities}
+
+%Authors of the paper, and who executed the survey. 
+
+\author{\IEEEauthorblockN{Luca Masciarelli}
+\IEEEauthorblockA{Seneca College\\
+Toronto, Canada\\
+lcmasciarelli@myseneca.ca}
+\and
+
+\IEEEauthorblockN{Christopher Gow}
+\IEEEauthorblockA{Seneca College \\
+Toronto, Canada\\
+cgow1@myseneca.ca}
+\and
+\IEEEauthorblockN{Ignatius Asikin }
+\IEEEauthorblockA{{Seneca College \\
+Toronto, Canada\\
+imasikin@myseneca.ca}
+}}
+
+\maketitle
+
+%Abstract of the paper, it is a short descripton of what we plan to do, how we plan to do it, the outcome, and future works. 
+
+\begin{abstract}
+We live in a world in which new technologies and devices are continuously being invented, and each of them comes with their own imperfections, especially when it comes down to user authentication. Different methods of authentication comes with its own issues whether it be for security or comfort. The goal of this paper is to be able to propose at least one or more authentication methods that are most convenient for both people with disabilities and without. For the purpose of this project we will be focusing on people with cognitive disabilities. To achieve this, we will rely heavily on extensive research in the ﬁeld of both authentication methods and its security, as well as assistive technology for people with disabilities. In addition to this we will also survey people with and without disabilities to see which method they think is the best. One challenge for us to be able to propose a new and more suitable authentication method will impose its own challenges especially in the ethic department, considering that several surveys will be conducted within the Seneca vicinity. We hope that at the end of this research, we will be able to contribute something to the research and development ﬁeld in technology; or at the very least be a base research in which others can build upon.
+  \end
+
+ %This document is a model and instructions for \LaTeX.
+%This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
+%or Math in Paper Title or Abstract.
+\end{abstract}
+
+\begin{IEEEkeywords}
+authentication, mobile authentication, cognitive disabilities, survey, research.
+\end{IEEEkeywords}
+
+%Intro of our document, it speficies things such as what we are doing, motivation, problem state, contributions, and research.
+
+\section{Introduction}\label{sec:intro1}
+With technology advancing rapidly finding a secure way of authentication is needed for individuals to gain access to their private information. There are several authentication methods for individuals to gain access to these systems such as biometric sensors: iris scanner, ﬁngerprint scanner, gesture passwords, etc. However, these are not taking into considerations people with disabilities who might not be able to use these type of authentication methods to authenticate themselves. The original idea came from a discussion about an IEEE paper about gesture password as authentication methods, in which developed into authentication methods in assistive technology; with that idea as a backbone, we were able to ﬁnd a research paper called A Multi-sensory Gesture-Based Login Environment in which going to be the foundation to our research. Assistive technology is developed to help people with disabilities to be able to perform tasks how normal users would. With assistive technology advancement however, there will be more problems revolving authentication methods that can be used with these assistive technologies. Authentication methods that are most easy and convenient to people with disabilities may not be as convenient for normal users and vice versa; therefore, the purpose of this paper is to propose a more convenient authentication method that is suitable for both type of users. The way that we will try and decide which authentication method is best suited for both people is by conducting a survey. We will survey people with and without disabilities and they will test five different authentication methods. The authentication methods that they will be testing are: gesture authentication, pictorial authentication, facial authentication voice authentication, and fingerprint authentication. The participants will try all the authentication methods and they will vote on which one they think is the best. Based on those results we will determine which authentication method is the best. 
+
+\subsection{Problem State}\label{sec:subhead1}
+The main purpose of this project is to propose an authentication method that is suitable for people with and without disabilities. Currently, there is not a good way for people with disabilities to authenticate themselves with specific disabilities. They can choose to use regular authentication methods, but these may not be the best based on the disabilities that they have. We want to find an authentication method that can be used for any user disabilities, so they can have better security on their devices. By December 31, 2020 businesses will need to be in compliance with the accessibility rules. The name of this act is called Accessibility for Ontarians with Disabilities Act (AODA). Ontario is progressing well by incorporating disabled people, but there is more work that needs to be done. The main issue that needs to be addressed is to ﬁnd different aspects and issues that people with disabilities encounter in a day to day life especially when it involves security and authentications. Since survey is one of the better ideas to get an overall overview and opinions from both people with disabilities and without, there will be some legal actions that should be taken before executing the survey; The survey will not only apply to issues in authentication in devices, but other platforms as well such as websites since they need to be easily accessible for users with disabilities- especially for people with cognitive and visual disabilities. 
+
+\subsection{Motivations}\label{sec:subhead2}
+Users with specific disabilities are unable to add security to mobile devices to secure them because it is hard for them to authenticate themselves. Our motivation behind this project is to find an authentication method that is suitable for users with disabilities to secure themselves. By doing research and conducting the survey we can aid or influence other researchers to continue to find a way to help users with disabilities to secure their devices and authenticate themselves with ease. With this project, we would be able to ﬁnd authentication methods that is most suitable for users with disabilities and without. We would also need to consider if our proposed authentication methods will work on a user with any disability or if we are focusing on a user with a speciﬁc disability. Certain authentication methods would work with each user, but there is no single authentication method that would work on both users. Currently, there is a lack of focus on researching and creating new authentication methods for disabled users which is why we are focusing on this topic. Our end goal is to be able to propose a new way of authentication for user that is most convenience to people with disabilities without sacriﬁcing too much comfort for people without disabilities.
+
+\subsection{Contributions}\label{sec:subhead3}
+Contributions that we would propose through this paper is to ﬁnd an authentication method that is most convenient to both people with disabilities and without, as well as to propose an extra layer of security to the newly proposed authentication method. Throughout this research we will have to conduct surveys, comparison, and research on different authentication methods that is most suitable for people with and without disabilities, and the goal is to ﬁnd a middle ground. If we can successfully propose a new authentication method that works for both normal people and people with disabilities, it would contribute a lot to the ﬁeld of assistive technology which would make it easier for someone living with disabilities to be able to access their secured information and devices without sacriﬁcing the convenience and comfort of people without disabilities.
+
+%this section specifies the research that we are doing and the different authentication methods that we will be using when completing the survey. 
+
+\section{Research of Authentication Methods}\label{sec:researchauthentication}
+Our initial research consists of first brainstorming the different authentication methods that have been currently implemented. Such authentication methods include fingerprint, facial, voice, signature, gesture, etc. After we have finished brainstorming the authentication methods that we would need, we had to narrow down which authentication methods users would want to use on their smart-phones. This was a crucial step as we had to determine which authentication methods users would want to use, familiar with it, as well as comfortability. \\ 
+
+To narrow down which authentication method, we would use for our survey, we would need to do research on the proposed authentication methods to see which are most feasible. \\
+
+After discussing with everyone in our group, we came to a consensus to use these five authentication methods in our upcoming survey: fingerprint, facial, voice, gesture, and pictorial authentication method. We feel that these five authentication methods can be easy to use as well as useful for users with and without disabilities. Although some users may not have used some of the authentication methods before, these can be a better alternative to some of the ones they have been using before as well as being more efficient. 
+
+\subsection{Pictorial Authentication}\label
+\\The picture below shows the enrollment process for the pictorial authentication. When you open the app, you can do one of three things: \\
+
+a.  Use the picture they provide \\
+
+b.  Use a picture from your gallery \\
+
+c.  Take a picture you would like to use \\
+
+One you choose which one you would like to use they ask you to pic 2-4 places on the picture to touch and remember the order in which you touch them. You touch the points on the picture twice and it will remember where you touched and the order, it will also ask you to set up a backup password in case you forget the key points on the picture. Tried authenticating by touching points I did not register on the picture and it did not let me authenticate. There is a pro version for 1.29 and it gets rid of the ads, and you can use multiple pictures instead of one to unlock. This cannot be used with or in place of lock screen can only be used when you open the app. Although this is an update this is expected to come- just not sure when it could be a while.  \\
+
+\includegraphics[width=0.3\textwidth]{Untitled.png} \\
+
+\subsection{Gesture Authentication}
+\\When you open the app, it makes you draw something that can be used to unlock the phone (E.G. circle). You need to draw it twice and then it will be registered. Once it is registered you can use it in place of your lock screen or you can use it in conjunction with your lock screen. (E.G. type in your password first then draw the Gesture.) You can also change the sensitivity (how hard you need to be pressing on the screen). Tried drawing the wrong gesture and it did not unlock the device. You can also have a backup pin in case you forget your gesture. There is pro version, the only difference is that it gets rid of the Ads displayed in the app, all the app functions are the same. \\
+
+\includegraphics[width=0.1\textwidth]{1.PNG}
+
+\subsection{Facial Authentication}
+Facial Authentication is very simple to enroll. All you need to do is upload a few pictures of yourself to the app. You will be prompted to take a picture of yourself and then turn your face 90 degrees and take another one, etc. After that you will need to click “Verify” and it will ask you to turn your face a certain way, and it will compare the picture it just took with the one that is stored in the app. If it matches it will authenticate you, if not it will ask you to do it again. \\
+
+\includegraphics[width=0.3\textwidth]{Untitled3.png} \\
+
+\subsection{Voice Authentication}
+Once you open the app it will ask you to input your name, and you can then choose if you want to enroll your voice using digits or if you want to record a phrase. It also gives you the option of enrolling your voice in English or Spanish. After you enroll yourself you simply say the phrase back to the app and if the voice pattern matches then it will authenticate you, if not it will ask you again to read the phrase or digits to see if it matches. \\
+
+\includegraphics[width=0.3\textwidth]{Untitled4.png} \\
+
+\subsection{Fingerprint Authentication}
+For this method we simply used the native fingerprint authentication method on an iOS device and used it for users to authenticate themselves. To enroll yourself you need to lift and rest your finger repeatedly on the fingerprint sensor until it fully enrolls your fingerprint. To authenticate yourself you simply need to place your finger on the sensor and it check if it matches what is stored in the phone. If it matches it will authenticate you and you can access the phone, if not you will need to lift your finger and place it on the sensor again until it matches. If you do these 5 times unsuccessfully it will lock you out of the phone and you will need to enter the backup password to unlock the phone.  
+
+%this section outlines our research methodology. 
+
+\section{Methodology}\label{sec:methodology}
+This section will outline the methodology that we followed while doing both our research on this topic and the methodology that was used when we conducted our survey.
+
+\subsection{Research Methodology}
+There are several ways that we can approach our research paper. Since this paper is mostly research based rather than focused on creating a practical physical device, we will have to do an extensive amount of research on the topic. Along with other related topics relating to authentication methods for both people with and without disabilities, and assistive technology. With data collection and analysis, we are planning on looking for existing surveys that have been conducted by organizations or groups of individuals who are experienced in this ﬁeld. We would gain access to these different types of research by using different databases that we have access to because of Seneca, conference papers, and even from the help of some of our professors that could lead us in the right direction in acquiring all of the information needed to complete this research paper. Another approach that we would like to implement for this research paper is conducting the survey ourselves within the reach of Seneca College. This of course will impose several legal permits that should be acquired through the ethics department of Seneca College; hence, we will have to arrange and request for that following permit to avoid future legal issues. Proposing new authentication method that is most convenient to both people with disabilities and without will require extra attention to detail; what are the pros and cons, who can be beneﬁt from it, and the common resources that is universal. this means that most of if not all organizations are able to acquire. If implementing a new authentication method in a new physical device is feasible enough and with enough resources, we might be able to pursue this research paper further. With regards to simulation we could conduct various different experiments to see which means of authentication works best for people with and without disabilities. We could present various means of authentication to the user and see which one they chose, and why. Also, we can see which means they think to be the simplest and most secure and can work best for people with and without disabilities. To put it simply we are trying to ﬁnd a middle ground in terms of authentication that works for both parties. A challenge that comes with this that should be anticipated is the amount of knowledge especially in the ﬁeld of mathematics which we might need extra guidance and help with. Another challenge that we should anticipate for is the legal challenges as noted above that might come with this type of research, which is why we need to ensure that we obtain the proper consent from the ethics department at Seneca.
+
+\subsection{Survey Methodology}
+The first thing that we needed to do in order to conduct the survey is to get consent from the Research Ethics Board at Seneca. This required us to fill out a form that detailed exactly what the purpose of our project was and how we would go about conducting the survey. We needed to provide the Research Ethics Board with a lot of different things such as: \\
+\begin{itemize}
+  \item The questions that will be asked at all stages of the survey
+  \item How we will recruit people to participate in the survey - i.e. in person, email, etc. 
+  \item Consent forms that needed to be signed by the people participating in the survey
+  \item Information how what information we will need from them and how that information will be stored
+\end{itemize} \\
+
+There was more information that was provided to the Research Ethics Board, but the ones that are listed above are the most important ones. Once we created and filled out all the essential points in the document, we sent it to the Research Ethics Board for approval. The process to get approved took about ten days. Once we received approval from the Research Ethics Board the next step was to get people to participate in the survey. For the portion of the survey that is going to be conducted on people without disabilities we got our friends and family of various ages to participate in the survey. They tested all five of the authentication methods and voted for the one that they thought was the easiest. To conduct the survey on people with disabilities we are recruiting people by sending emails to support groups where people go go have cognitive disabilities and we also reached out to people over social media. Users with cognitive disabilities will have the survey conducted twice on them. Their answers may differ if the survey is conducted twice and at different times, so it’s necessary to do the survey twice. This is to ensure that the results are accurate. When conducting the survey, it should take no longer than 30 minutes, and the participants are going to test all five of the authentication methods. The first thing that will be done during the survey is we record their name, age, and type of disability (if applicable). After this we will explain the purpose of the survey and significance of it and ensuring that they know that participation is voluntary and the information that is recorded is going to be kept confidential. Next, we will explain all the different authentication methods that we will try during the survey. Next, we will go through the enrollment process with them- this will be done primarily by the participant but if they require assistance, we will help them with whatever they need assistance with. After the enrollment process, we will ask them which type of authentication method they thought the easiest to enroll was. After this they will authenticate themselves using all the different types of authentication. Once that is complete, we will ask the participant to vote on which method was the easiest in terms of authenticating themselves. Finally, we will ask them one final set of questions and that is to keep in mind the enrollment process and the ease of authentication for all the different methods and vote on which one they liked the best. In terms of the voting they will be asked to vote on a scale of 1-5, 1 means that they liked that authentication method the best, and 5 means the liked it the least. The applications that we will be using are on both Android and iOS since they are the two most popular operating systems used with respect to mobile devices. Based on the votes we will add which authentication method was most preferred under the “findings” and the “results” section. We will indicate which method people without disabilities thought was the easiest in terms of enrollment and ease of authentication, and we will also indicate which authentication method people with disabilities thought was the best in terms of enrollment and ease of authentication. Going forward, we will be able to conclude with method is the most suitable for people with and without disabilities and which should be implemented with future smart devices.
+
+%this section is our literature review. It has some key works/projects that are similar to ours and we reviewed them and provided details about each of the works and projects that where conducted in all of them.
+
+\section{Literature Review}
+\subsection{Composition Policies for Gesture Passwords: User Choice, Security, Usability and Memorability}
+This paper which was published in CNS 2017 has to deal with gesture passwords and how users deal with it. The paper begins with the authors talking about the most common methods in which people use to secure their phones- which are text-based passwords, and PIN numbers. Next, they discuss the issues with that means of authentication on mobile devices, such as password
+reuse, weak passwords, and password policies that are confusing to most users. Another means of authentication that most people think is secure is biometric- in particular fingerprint scanning. However, according to the article this means of authentication is not actually as secure as we think it is. One example that the authors used is that the fingerprint scanners on practically all iPhone devices are susceptible to a spoofing attack. If we take into consideration the sheer number of people who use iPhones every day, there are a lot of people who are leaving themselves vulnerable to this attack. With users continuing to use the fingerprint reader on their iPhone devices they are essentially just waiting for attackers to gain access to their data since the scanner is vulnerable to the spoofing attack. With this in mind there has been a considerable effort in the security
+and mobile computing communities to develop and implement gesture passwords as a means of authentication as it is far more secure than the authentication protocols that are currently in place on mobile devices. \\
+
+The paper then goes on to discuss some of the problems that might be present if gesture passwords are put into mobile phones. The problems that the authors have pointed out are that users would create a single finger gesture and other people will create multi-finger gesture, and that the gestures that people remembered the best are signature and simple shapes such as circles, and squares. This poses the same problem as text-based passwords-which is password reuse. People are most likely to use passwords that are easy to remember/draw and this as noted above poses the same problem. People will keep using the same passwords because it is easy for them to remember and they can be drawn fast to unlock their device and they can gain access to their information faster. The authors move to talk about the experiment that they conducted to come to these results. They displayed the most common passwords that were drawn by the participants in the survey and most people drew simple symbols such as letter or a simple zig-zag pattern both of which can be guessed easily. Next, they discuss how they analyzed the feedback that was given to them. It was put into four different categories which are: User choice, security, memorability, and usability. \\
+
+In user choice, they analyzed the different ways that the users drew their passwords, and they noticed that most people kept drawing the same thing which are: Letters-which relate to a letter in their name, Shapes- simply drawing a circle or a square, Combination of shapes such as a triangle inside a circle, Slopping no jagged edges, Abstract just random drawing that can be hard to remember [1]. In security, they used two measures for the security of the gestures that were drawn: 1) True positive rate, and 2) False positive rate. \\
+
+In memorability they explain how the gestures that the users draw relate to memorability. Users almost always drew something simple because they were more likely to remember it when they needed to draw it again, and it would stay in their short-term memory. In usability, the authors discuss the policies surrounding the policies that are implemented when the user needs to draw the password, they have to make the policies easy for users to understand but at the same time hard for attackers to guess. \\
+
+Finally, the authors conclude by talking about the PROS and CONS of gesture passwords, and the effect it would have if they were implemented onto mobile devices. They also noted that the password policies that they have developed were a good in between easy for the user to understand but at the same time hard for attackers to guess. Since this type of authentication is still in the beginning stages there is undoubtedly a lot of work that needs to still happen in the means of authentication.
+
+\subsection{Where Usability and Security Go Hand-in-Hand: Robust Gesture-Based Authentication for Mobile Systems}
+Gesture password as one of authentication methods has recently been the interest of a lot of people in terms of security in authentication method for smart devices. The system relies on shape and gesture recognition in which the data is recorded from the user and processed and stored before then processed by the algorithms that have been developed. This article touches on the different important variables used in this authentication method which are location, rotation, and scale; and proposes a pre-processing gesture recognition method called Garda that helps eliminate errors while detecting or trying to recognize specific patterns that are unique to each and every user. Figure 1 is an example on how the three variables work together. \\
+
+\includegraphics[width=0.4\textwidth]{Untitled6.png} \\ \caption{Fig. 1. 1a, 1b, 1c}\\
+
+Figure 1.a shows that when the device is moved location, the template also changes position. Figure 1.b shows if the device is rotated to a certain direction, the template changes relatively to the rotation of the device. Finally figure 1.c shows that after scaling the device (most commonly found in smart devices zoom in system), the size of the template of the gesture also changes accordingly. \\
+
+The pre-processing method that this paper proposes is that by using the combination of location variant, scale variant, and rotation variant, and crunching those aspects into the algorithm will reduce false positives/false negatives by approximately 45\% [2]; Lastly, this research paper also touched briefly on testing this method in its authentication accuracy and its resistance against brute force attacks. As a side note from this paper, the Garda gesture recognition method was the result of testing of 13 different gesture recognition methods, and using those elements against
+different data set, they were able to show how tuning different variables in gesture recognition system can help the performance of one’s authentication performance.
+
+\subsection{I Always Have to Think About It First: Authentication Experiences of People with Cognitive Impairments}
+Authentication is an important part of a user’s experiences with devices and Internet services. Most authentication methods are designed without considering disabled users, which poses as challenges for them. The authors have done a study on the authentication experiences and challenges for users with cognitive impairments and without based on web accessibility, computer use and authentication. The cognitive impairments they talk about is defined as those which affect a person's ability to learn, process and/or remember information, communicate, or make decisions
+[3]. They talk about the difficulties a user may have when trying to authenticate themselves such as remembering credentials, typing on a keyboard, logging out of existing accounts and being wary of errors. The goal of the paper is to create insight on this problem and make future authentication methods more accessible and easier for users with cognitive impairments. They also take about related works and the research studies other authors have done on this subject. The study that the original authors have done was conduct a study based on seven users who have cognitive impairments. Only eligible users were allowed to participate and had three parts: their demographic, computer configurations, authentication experiences, and opinions on online security and privacy. The results on their study can be found in figure 2. \\
+
+Figure 2 shows the demographic of the users chosen for the study. As seen in the table, it shows the ID of each user, their age, gender, and a description of their cognitive impairment. Based on the results, they came to a conclusion that authentication interfaces are not accessible for users with cognitive impairments. Each of the users who were tested had difficulties and the challenges differ from person to person. \\
+
+\includegraphics[width=0.4\textwidth]{Untitled7.png} \\ \caption{Fig 2. Demographic information of participants}\\
+
+\subsection{Disabilities and Authentication Methods: Usability and Security}
+A lot of social media and online services in the internet needs to be accessible to everyone. Information in these types of services need to be protected of all time and needs to be consistent with the CIA triad (confidentiality, integrity, and availability). Users should be able to trust their data with the online service and that only a specific group of users should have access to their own personal information. Authentication is a significant element of information protection and it is used to prove that users are who they claim to be. However, this sometimes can be found to be a challenge for people with disabilities. Not all authentication methods that are convenient for people without disabilities are convenient for people with. The paper focuses on people with both physical and cognitive disabilities. It also talks about the research methodology that they used to conduct this research which we thought was useful for our purposes.
+
+\subsection{Perceptions of Mobile Device Authentication Mechanisms by Individuals who are Blind}
+The purpose of the paper is a study that focuses on methods of mobile authentication for users who are blind. They discuss about the security as well as the accommodations with usability and accessibility for blind users. They have done research and proposed an authentication method for mobile devices for eyes-free interactions. They have tested this research with users who are blind and determined the potential use of this authentication method. There is also concern for privacy and security issues for users who are blind. This can impact their interactions with the technologies and could cause vulnerabilities. Interfaces that are graphical such as pattern unlock screens, are difﬁcult with screen readers and the positional information can be hard to communicate through audio. Interviews were done with three blind users and they relied on assistive technology for interaction with their mobile devices. The results of the interview showed that one user did not lock their device since the unlocking methods were too difﬁcult. Fingerprint authentication was mostly used since it was faster and more reliable than entering a PIN number. Although the ﬁngerprint authentication was used, sometimes it would require a PIN as backup which proved to be difﬁcult as the blind users had to memorize the positions of the digits on the PIN entry screen. Although there were other methods for authentication such as stroke-based patterns and regular pattern unlock screens, the users didnt feel secure when authenticating in public due to the simplicity of the patterns and hard to perform consistently with assistive technologies. Another threat is the assistive technologies (voice) could potentially be overheard by other users which made the users uncomfortable and leaving their mobile devices unlocked. The authors used a tactile aid to help blind users with authentication methods. Currently, they tested the tactile aid on two authentication types which was a PIN and a 3x3 graphical grid pattern. The tactile aid would assist the user by showing indication when their ﬁnger touched the grid or PIN buttons. Vibration patterns differed at the location of each digit making it easier to know which digit was entered. Although this method initially helped, it was still hard for blind users to authenticate consistently as they only had a 52.3\% rate of accuracy. Future research would have to be done on this tactile aid in order to improve it and further assist blind users. They plan to modify the instances when tactile feedback is presented when performing authentication interactions to determine whether greater assistance can be provided to the user [5].
+
+\subsection{Universal Authentication: Towards Accessible Authentication for Everyone}
+From websites, email, online banking, and social media, they always require their users to be able to authenticate themselves using the log in function. This is a way to ensure that the users are the people who they say they are. This article touches the topic of authentication method, security, and usability for people with disabilities. Most of the authentication methods that are available for people with disabilities sometimes are not as secure as other methods that are accessible to people without disabilities. One example that was stated is an authentication method that is heavily dependant on people using mouse and keyboard; this can be very challenging for people with motor impairments – making it difﬁcult for them to enter speciﬁc characters which are required to authenticate themselves (which results in a weaker password and can be easily cracked).This article proposes a system in which abletocater services towards users with speciﬁc disability; a system that is able to know whether a user has a disability, and which kind. The paper mentioned previous alternatives found from another article such as Passphrases [Porter, 1982] and one-time password schemes [Haller, 1995]; tactile authentication methods [Kuber & Sharma, 2010] [Azenkot et al., 2012]; graphical passwords [Biddle, et al., 2012], [Chiasson et al., 2008]; eye-gaze method [De Luca et al., 2007]; audio-based methods such as Passtones [Brown & Doswell, 2010] and Musipass [Gibson et al., 2009]; methods using biometrics data
+such as FingerID [Alotaibi & Argles, 2011], a system using iris information [Chong et al., 2005], BioID [Frischholz & Dieckmann, 2000], and electrocardiogram (ECG) - based systems [Shen, 2008] [6] ECG is one of the feasible and effective method because it measures heart beat of speciﬁc individual; however, it requires special hardware. Another alternative that was proposed was token based RSA and PICO; PICO is a dedicated hardware that contains unique credential that is used to authenticate users to a speciﬁc service. PICO uses a picture of a 2D visual code which is an self signed app, and this picture is shown to that speciﬁc service to authenticate its user. Again, PICO requires a special hardware to be able to function. This paper proposes four different problems that we need to ask ourselves while conducting our research which is highly relevant to our topic in authentication methods that is most suitable for both people with or without disabilities.
+
+\subsection{Smartphone authentication: User experience, expectation and satisfaction}
+This article discusses the importance of passwords/authentication and ensuring that usability
+and security are on place when evaluating different means of authentication. As noted in the
+article users unlock their devices at least 50 times per day, and there needs to be an authentication
+method in place to ensure that this can be easily and securely. Noted in the article was about
+how weak and hard to remember passwords are. There was a survey done with over 6 million
+people, and the result was that 91\% of people used a password that was in the top 1000 most
+common passwords [7]. These passwords included password, password123, and 123456 these
+passwords are not secure and can be easily cracked. The reason that people chose these types
+of passwords is because they were easy to remember. What was more concerning was that the
+people who were surveyed said that they used these passwords for almost everything- once again
+this is concerning because these passwords can be easily cracked, and then the attacker can gain
+access to almost everything that the user has set that password for. The author says that the
+most effective and secure way to authenticate yourself is via biometrics. \\
+
+The main reason for this is because you dont have to remember anything-it is always with you. For example, if you
+use your fingerprint as a means of authentication then you never have to think about what your
+password is because you will always have your fingerprint. You simply place your finger on
+the scanner, it will scan it and if it matched then you will be authenticated and given access.
+Biometrics are more secure than passwords because it is highly unlikely that two people will
+have the same fingerprint, but it is very likely that two or more people will have the same textbased
+password. The one downside to biometrics is the cost that can come with it. Almost all smartphones you buy today have a fingerprint reader, which you can use to authenticate yourself,
+but most laptops, computers, and tablets dont have this technology, and it would be expensive to
+implement. If manufactures did implement this than the prices of their devices would increase
+and less people would buy them. The research that was done in this article also showed that
+people who used biometrics to authenticate themselves on devices had a better experience and
+were overall satisfied with the device. The conclusion that was made also included that this
+means of authentication was also more usable then a regular text-based password because you
+simply place your finger on the scanner, and thats it. The one thing that was not mentioned
+in this article was the effect this would have on people with disabilities. If a person suffers
+from blindness then it will be hard for them to locate the fingerprint scanner, scan their finger,
+and authenticate themselves. In this case the usability, and overall satisfaction would decrease
+because they will have a hard time authenticating themselves and accessing the information on
+their device. \\
+
+\includegraphics[width=0.4\textwidth]{Untitled12.png} \\ \caption{Fig 4. Flowchart of authentication methods}\\
+
+Figure 4 shows a flowchart of the different means of authentication with different examples
+of each. The three main categories are identity-based, token-based, and knowledge-based. \\
+
+Figure 5 shows the preference of users in terms of different authentication methods, the
+most popular means of authentication is fingerprint followed by a pattern based password. \\
+
+\includegraphics[width=0.4\textwidth]{Untitled13.png} \\ \caption{Fig 5. User preference of authentication methods}\\
+
+Figure 6 represents the answers that people gave when asked about the convenience and
+security of the different authentication methods. A majority of people want the authentication
+to be as fast as possible, this could be because they dont want to waste their time trying to
+authenticate. They just want to access their device and information quickly. \\
+
+\includegraphics[width=0.4\textwidth]{Untitled14.png} \\ \caption{Fig 6. Convenience of authentication methods}\\
+
+%this section outlines the current results that we have obtained from the people who have participated in the survey. 
+
+\section{Current Survey Results}
+Due to time restrictions, we were able to gather twenty-two survey participants. Twenty of them were people with disabilities while the other two were people with dyslexia and dementia. Note that we will continue this survey and gather more participants with and without cognitive disabilities throughout our study in order to get more accurate results. The current results that we have for people without cognitive disabilities shows the following. 
+
+\includegraphics[width=0.4\textwidth]{Untitled7.png} \\ \caption{Fig 3a. shows the survey results on people without disability}\\
+
+Figure 3a. shows that ten people prefer using their fingerprint to authenticate themselves. Followed by four people who prefer facial recognition, two people who prefer voice recognition, three people who prefer gesture authentication method, and pictorial as the last preferred authentication method. \\
+
+\includegraphics[width=0.4\textwidth]{Untitled10.png} \\ \caption{Fig 3b. shows the first survey result of people with cognitive disability}\\
+
+Figure 3b. shows the results that we got from people with cognitive disability. From here we are able to determine so far that the most preferred authentication method for people with cognitive disability is actually gesture and voice authentication method while the least preferred authentication method is facial recognition. Referring back to our survey methodology, we conducted our survey/experiment twice to eliminate any inaccuracies. After the second experiment, the result on people with cognitive disabilities was slightly different as shown in figure 3c. below \\
+
+\includegraphics[width=0.4\textwidth]{Untitled11.png} \\ \caption{Fig 3c. shows the second survey result of people with cognitive disability}\\
+
+We can see that a person with dementia now prefers gesture authentication method while the person with dyslexia preferences stayed the same. Since we were only able to conduct this experiment on two people with cognitive disability, we will continue to conduct this research throughout our study and continue gathering participants with cognitive disabilities to get a more accurate result. 
+
+%this section is our conclusion, and concludes the paper
+
+\section{Conclusion}
+From our current results, we determine that the most preferred authentication method from most to least preferred by people without disabilities are fingerprint, facial recognition, voice, pictorial, and gesture while the most preferred method by people with cognitive disability is the gesture authentication method; it is interesting that gesture is the least favourite option to people without disability while it is the most preferred method by people with disability. Due to the lack of data that we were able to gather throughout the time scope that was given, we do not have a big enough sample size to decide which authentication method is most convenient for both parties. We are going to continue finding people to conduct our survey (users with and without disabilities) in order to accurately get a good representation on what authentication method users prefer.
+
+%this is our bibliography
+
+\begin{thebibliography}{1}
+\bibitem{ref1}
+G.D.~Clark, J. ~Lindqvist, and A. ~Oulasvirta, "Composition policies for gesture passwords: User choice, security, usability, and memorability", in \emph{Communications and Network Security (CNS), 2017 IEEE Conference on}, IEEE, 2017, pp. 1-9.\hskip 1em plus
+  0.5em minus 0.4em\relax 
+  
+\bibitem{ref2}
+C. ~Liu, G.D. ~Clark, and J. ~Lindqvist, “Where usability and security go hand-in-hand: Robust gesture-based authentication
+for mobile systems", in \emph{Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems.}, ACM, 2017, pp. 374-386 \hskip 1em plus
+  0.5em minus 0.4em\relax
+  
+\bibitem{ref3}
+J. ~Hayes, X. ~Li, and Y. ~Wang, “I always have to think about it first: Authentication experiences of people with cognitive impairments", in \emph{Proceedings of the 19th International ACM SIGACCESS Conference on Computers and Accessibility.}, ACM, 2017, pp. 357-358 \hskip 1em plus
+  0.5em minus 0.4em\relax
+  
+ \bibitem{ref4}
+K. ~Helkala, "Disabilities and Authentication Methods: Usability and Security", in \emph{2012 Seventh International Conference on Availability, Reliability and Security}, Prague, 2012, pp. 327-334 \hskip 1em plus
+  0.5em minus 0.4em\relax  
+  
+\bibitem{ref5}
+Y. ~Wang, "Universal authentication: Towards accessible authentication for everyone."\hskip 1em plus
+  0.5em minus 0.4em\relax  
+  
+\bibitem{ref6}
+F. ~Wolf, R. ~Kuber, and A.J. ~Aviv, "Perceptions of mobile device authentication mechanisms by individuals who are blind", in \emph{Proceedings of the 19th International ACM SIGACCESS Conference on Computers and Accessibility.}, ACM, 2017, pp. 385-386 \hskip 1em plus
+  0.5em minus 0.4em\relax    
+  
+\bibitem{ref7}
+I. U. Ahmed et al., “Smartphone authentication: User experience, expectation and satisfaction,” 2017.\hskip 1em plus
+  0.5em minus 0.4em\relax  
+  \end{thebibliography}
+\end{document}
